@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="player.png" type="image/x-icon">
+    <title>Zombie 2D Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- loading -->
+    <div id="loading">
+        <img src="load.png" alt="">
+        <p>Welcome</p>
+        <button id="start">🎮Play</button>
+    </div>
+
+    <!-- game -->
+    <main id="main">
+        <p>💣Time: <span id="time">0</span></p>
+        <p>💀Kills: <span id="kills">0</span></p>
+        <div id="game">
+            <div id="player"></div>
+        </div>
+    </main>
+
+    <!-- gameover -->
+    <div id="gameover">
+        <p>Game Over</p><br>
+        <p>Kills: <span id="kills2">0</span></p>
+        <br>
+        <button id="restart">Restart</button>
+    </div>
+
+    <!--Sounds-->
+    <audio id="overS" src="gameover.mp3"></audio>
+    <audio id="gunS" src="gun.mp3"></audio>
+    <audio id="loadS" src="loading.mp3"></audio>
+    <audio id="zombieS" src="zombie.mp3"></audio>
+
+
+    <!-- script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
