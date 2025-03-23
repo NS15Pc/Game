@@ -52,7 +52,6 @@ player.addEventListener("click", () => {
     if (Y >= 590) {
         Y = 590;
     }
-    times = 30
 })
 //time
 let times = 30;
